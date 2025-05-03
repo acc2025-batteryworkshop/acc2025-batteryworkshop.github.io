@@ -20,6 +20,35 @@
     <!-- Responsive Style -->
     <link rel="stylesheet" type="text/css" href="assets/css/responsive.css">
 
+    <!-- Custom CSS -->
+    <style>
+      /* 特殊咖啡歇卡片样式 */
+      .coffee-break-card {
+        background: #f8f9fa;
+        border: 2px dashed #6c757d;
+      }
+
+      .coffee-break-card .images-box {
+        padding: 15px;
+        background: #fff;
+        border-radius: 50%;
+      }
+
+      .coffee-break-card .lni-coffee-cup {
+        font-size: 2.5rem;
+        color: #6c757d;
+      }
+
+      .break-title {
+        color: #6c757d;
+        font-weight: 600;
+      }
+
+      .break-subtitle {
+        color: #868e96;
+        font-size: 0.9em;
+      }
+    </style>
 
   </head>
   <body>
@@ -338,20 +367,6 @@
             <!-- Team Item Starts -->
             <div class="team-item wow fadeInUp" data-wow-delay="0.8s">
               <div class="team-img">
-                <img class="img-fluid" src="assets/img/speaker/Onori.jpg" alt="">
-              </div>
-              <div class="info-text">
-                <h3><a href="https://onorilab.stanford.edu/" target="_blank">Simona Onori</a></h3>
-                <p>Stanford University</p>
-              </div>
-            </div>
-            <!-- Team Item Ends -->
-          </div>
-
-          <div class="col-lg-3 col-md-6 col-xs-12">
-            <!-- Team Item Starts -->
-            <div class="team-item wow fadeInUp" data-wow-delay="1.0s">
-              <div class="team-img">
                 <img class="img-fluid" src="assets/img/speaker/Gregory.jpg" alt="">
               </div>
               <div class="info-text">
@@ -364,7 +379,7 @@
 
           <div class="col-lg-3 col-md-6 col-xs-12">
             <!-- Team Item Starts -->
-            <div class="team-item wow fadeInUp" data-wow-delay="1.2s">
+            <div class="team-item wow fadeInUp" data-wow-delay="1.0s">
               <div class="team-img">
                 <img class="img-fluid" src="assets/img/speaker/Rahn.jpg" alt="">
               </div>
@@ -376,6 +391,19 @@
             <!-- Team Item Ends -->
           </div>
 
+          <div class="col-lg-3 col-md-6 col-xs-12">
+            <!-- Team Item Starts -->
+            <div class="team-item wow fadeInUp" data-wow-delay="1.2s">
+              <div class="team-img">
+                <img class="img-fluid" src="assets/img/inbox/KandlerOct2023_colorCropped - Kandler Smith - 1.jpeg" alt="">
+              </div>
+              <div class="info-text">
+                <h3><a href="https://research-hub.nrel.gov/en/persons/kandler-smith" target="_blank">Kandler Smith</a></h3>
+                <p>National Renewable Energy Lab</p>
+              </div>
+            </div>
+            <!-- Team Item Ends -->
+          </div>
 
           <div class="col-lg-3 col-md-6 col-xs-12">
             <!-- Team Item Starts -->
@@ -397,11 +425,11 @@
             <!-- Team Item Starts -->
             <div class="team-item wow fadeInUp" data-wow-delay="1.6s">
               <div class="team-img">
-                <img class="img-fluid" src="assets/img/speaker/Zhu.jpg" alt="">
+                <img class="img-fluid" src="assets/img/speaker/Amalie Trewartha.jpg" alt="">
               </div>
               <div class="info-text">
-                <h3><a href="https://zhujuner.com/" target="_blank">Juner Zhu</a></h3>
-                <p>Northeastern University</p>
+                <h3><a href="https://www.linkedin.com/in/amalie-trewartha-26508223b/" target="_blank">Amalie Trewartha</a></h3>
+                <p>TOYOTA Reasearch Institute</p>
               </div>
             </div>
             <!-- Team Item Ends -->
@@ -435,9 +463,262 @@
         </div>
 
         <div class="row">
+          <div class="col-12 mb-5 text-center">
+            <ul class="nav nav-tabs" id="myTab" role="tablist">
+              <li class="nav-item">
+                <a class="nav-link inactive">
+                  <div class="item-text">
+                    <h4>Opening Remarks</h4>
+                    <h5>7 July 2025</h5>
+                    <h5>8.50 - 9.00 AM</h5>
+                  </div>
+                </a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link active" id="monday-tab" data-toggle="tab" href="#monday" role="tab" aria-controls="monday" aria-expanded="true">
+                  <div class="item-text">
+                    <h4>Morning Session</h4>
+                    <h5>7 July 2025</h5>
+                    <h5>9.00 - 12.20 PM</h5>
+                  </div>
+                </a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" id="tuesday-tab" data-toggle="tab" href="#tuesday" role="tab" aria-controls="tuesday">
+                  <div class="item-text">
+                    <h4>Afternoon Session</h4>
+                    <h5>7 July 2025</h5>
+                    <h5>2.00 - 6.00 PM</h5>
+                  </div>
+                </a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link inactive">
+                  <div class="item-text">
+                    <h4>Closing Remarks</h4>
+                    <h5>7 July 2025</h5>
+                    <h5>6.00 - 6.10 PM</h5>
+                  </div>
+                </a>
+              </li>
+            </ul>
+          </div>
           <div class="col-12">
-            <div class="text-center wow fadeInUp" data-wow-delay="0.2s" style="margin: 100px 0;">
-              <h3 style="color: #c5c5c5;">Information Coming Soon!</h3>
+            <div class="schedule-area row wow fadeInDown" data-wow-delay="0.3s">
+              <div class="schedule-tab-content col-12 clearfix">
+                <div class="tab-content" id="myTabContent">
+                  <div class="tab-pane fade show active" id="monday" role="tabpanel" aria-labelledby="monday-tab">
+                    <div id="accordion">
+                      <div class="card">
+                        <div id="headingOne">
+                          <div class="schedule-slot-time">
+                            <span> 9.00 - 9.50 AM   </span>
+                          </div>
+                          <div class="collapsed card-header" data-toggle="collapse" data-target="#collapseOne" aria-expanded="false" aria-controls="collapseOne">
+                            <div class="images-box">
+                              <img class="img-fluid" src="assets/img/speaker/Gregory.jpg" alt="">
+                            </div>                     
+                            <h4>Advanced Battery Management: Perspectives on the Role of Machine Learning</h4>
+                            <h5 class="name">Gregory L. Plett, University of Colorado Colorado Springs</h5>
+                          </div>
+                        </div>
+                        <div id="collapseOne" class="collapse show" aria-labelledby="headingOne" data-parent="#accordion">
+                          <div class="card-body">
+                            <p>Battery-management systems (BMS) must perform a number of controls-oriented tasks, such as estimating state of charge, state of health, available energy, and available power. Some methods to accomplish these objectives rely on mathematical models of cell dynamics; others are data-driven instead. This workshop topic explores the advantages and disadvantages of these two approaches and discusses which applications might benefit from incorporating machine learning.</p>
+                            <p><strong>Biography:</strong> Gregory Plett is Professor of Electrical and Computer Engineering at the University of Colorado Colorado Springs. He received his Ph.D. in Electrical Engineering from Stanford University in 1998 and has conducted research in battery-management topics for the past 24 years. Together with his colleague M. Scott Trimboli, he has published a three-volume textbook series on battery-management systems, and he is the instructor of the "Algorithms for Battery Management Systems" specialization on the Coursera platform, which has had more than 100,000 enrollments. He and his students investigate modeling and estimation tasks for lithium-ion battery systems.</p>
+                            <!--div class="location">
+                              <span>Location:</span> Hall 1 , Building A, Golden Street, Southafrica
+                            </div-->
+                          </div>
+                        </div>
+                      </div>
+
+                      <div class="card">
+                        <div id="headingThree">
+                          <div class="schedule-slot-time">
+                            <span> 9.50 - 10.40 AM</span>
+                          </div>
+                          <div class="collapsed card-header" data-toggle="collapse" data-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
+                            <div class="images-box">
+                              <img class="img-fluid" src="assets/img/speaker/Rahn.jpg" alt="">
+                            </div>
+                            <h4>Detecting Short Circuits in Lithium-Ion Battery Packs During Operation and After Accidents</h4>
+                            <h5 class="name">Chris Rahn, Penn State University</h5>
+                          </div>
+                        </div>
+                        <div id="collapseThree" class="collapse" aria-labelledby="headingThree" data-parent="#accordion">
+                          <div class="card-body">
+                            <p>Short circuits (SCs) in electric vehicles (EVs) with lithium-ion battery packs can be precursors to thermal runaway and fire, a significant safety concern. Early detection and quantification of micro-short circuits is a high priority for safety-conscious BMS. SC detection is especially important after an EV crash where the pack may have been damaged. Fast and accurate SC detection for a damaged EV is crucial to ensuring safety and informing decisions of first responders regarding risk mitigation. These decisions include whether to move the damaged EV from the roadway, transport it to a storage facility, store it in close proximity to other vehicles, bring it indoors for repair, charge it, and certify that it is safe to return to the road. This presentation will review the state-of-the-art in SC detection and present future directions for BMS State-of-Safety determination. The focus will be on fast, simple, and reliable SC detection using low order estimators that can be implemented for every cell in the pack without requiring excessive computation. In the case of a crashed EV, approaches will be presented that can be implemented in any EV without prior knowledge of the battery pack, making it a valuable tool for first responders to assess damaged EVs. Algorithms that use cell-to-cell comparisons to extract true SCs from voltage and current noise will be described. Lab, operating EV, and crashed EV data will be used to validate the SC detection algorithms.</p>
+                            <p><strong>Biography:</strong> Christopher D. Rahn graduated from the University of Michigan with a B.S. in 1985 and from the University of California, Berkeley with a M.S. in 1986, both in mechanical engineering.  After three years as a Research and Development Engineer at Ford Aerospace, he returned to Berkeley and graduated with a Ph.D. in 1992. Dr. Rahn then joined the Department of Mechanical Engineering at Clemson University. In 2000, he moved to the Pennsylvania State University where he is now the J. 'Lee' Everett Professor of Mechanical Engineering, Director of the Mechatronics Research Laboratory, and Co-Director of the Battery and Energy Storage Technology Center.  Dr. Rahn's research work on the modeling, analysis, design, and control of mechatronic systems has resulted in four books and book chapters (including Battery Systems Engineering), almost three hundred peer reviewed publications, and several patents.  As a Fellow of the American Society of Mechanical Engineers (ASME), Dr. Rahn served as a Technical Editor of an ASME journal and chaired the executive committee of the ASME Design Engineering Division. He has advised over 100 Ph.D., M.S., and B.S. (honors) theses.</p>
+                            <!--div class="location">
+                              <span>Location:</span> Hall 1 , Building A, Golden Street, Southafrica
+                            </div-->
+                          </div>
+                        </div>
+                      </div>
+                      <div class="card">
+                        <div id="headingFour">
+                          <div class="schedule-slot-time">
+                            <span> 10.40 - 11.30 AM</span>
+                          </div>
+                          <div class="collapsed card-header" data-toggle="collapse" data-target="#collapseFour" aria-expanded="false" aria-controls="collapseFour">
+                            <div class="images-box">
+                              <img class="img-fluid" src="assets/img/speaker/Moura-2.jpg" alt="">
+                            </div>
+                            <h4>Extending Battery Pack Life by UN-balancing Cells</h4>
+                            <h5 class="name">Scott Moura, University of California, Berkeley</h5>
+                          </div>
+                        </div>
+                        <div id="collapseFour" class="collapse" aria-labelledby="headingFour" data-parent="#accordion">
+                          <div class="card-body">
+                            <p>As electric vehicle (EV) adoption accelerates worldwide, the need for smarter battery management has never been greater. Traditional battery control strategies focus on balancing state-of-charge (SOC) to maximize immediate range, but they often sacrifice long-term battery health. In this talk, we explore a transformative shift enabled by H-bridge-based cell-level inverters, which unlock unprecedented degrees of freedom in EV battery control. I will present a novel control framework that dynamically optimizes Amp-hour throughput across cells to extend both range and lifetime — without requiring prior knowledge of battery aging models. By strategically unbalancing SOC during charging to achieve state-of-health (SOH) balancing, and intelligently rebalancing during discharge to maximize usable energy, our approach prolongs pack life by up to 30% across diverse chemistries and use cases. The talk will cover the theoretical foundations, optimization algorithm, and simulation results based on real-world EV driving and charging data.</p>
+                            <p><strong>Biography:</strong> Scott Moura is the Clare and Hsieh Wen Shen Endowed Distingiushed Professor in Civil & Environmental Engineering, Director of the Energy, Controls, & Applications Lab (eCAL), Berkeley ITS Acting Faculty Director, PATH Faculty Director, and Chair of Engineering Science at the University of California, Berkeley. He received the B.S. degree from the University of California, Berkeley, CA, USA, and the M.S. and Ph.D. degrees from the University of Michigan, Ann Arbor, in 2006, 2008, and 2011, respectively, all in mechanical engineering. From 2011 to 2013, he was a Post-Doctoral Fellow at the Cymer Center for Control Systems and Dynamics, University of California, San Diego and a Visiting Researcher at the Centre Automatique et Systèmes, MINES ParisTech, Paris, France in 2013. His research interests include control, optimization, and AI for batteries, electrified vehicles, and distributed energy resources.</p>
+                            <!--div class="location">
+                              <span>Location:</span> Hall 1 , Building A, Golden Street, Southafrica
+                            </div-->
+                          </div>
+                        </div>
+                      </div>
+                      <div class="card">
+                        <div id="headingFive">
+                          <div class="schedule-slot-time">
+                            <span> 11.30 - 12.20 PM</span>
+                          </div>
+                          <div class="collapsed card-header" data-toggle="collapse" data-target="#collapseFive" aria-expanded="false" aria-controls="collapseFive">
+                            <div class="images-box">
+                              <img class="img-fluid" src="assets/img/speaker/Weihan_li.webp" alt="">
+                            </div>
+                            <h4>Machine Learning for Future Battery Management: Challenges and Opportunities</h4>
+                            <h5 class="name">Weihan Li, RWTH Aachen University</h5>
+                          </div>
+                        </div>
+                        <div id="collapseFive" class="collapse" aria-labelledby="headingFive" data-parent="#accordion">
+                          <div class="card-body">
+                            <p>The future of battery management for both automotive and stationary energy storage systems lies in the integration of data, physics, and machine learning. Over the past five years, significant advancements have been made in developing hardware and software infrastructures that enable seamless data collection from the field and cloud-based battery management. This emerging technology has opened up new opportunities across industries. In this talk, I will explore the potential of machine learning applications in battery management, highlight the opportunities we've encountered, and discuss the future challenges we must address in collaboration with industry leaders.</p>
+                            <p><strong>Biography:</strong> Prof. Dr.-Ing. Weihan Li is a Junior Professor in Artificial Intelligence and Digitalization for Batteries at RWTH Aachen University. Prof. Li's research focuses on leveraging artificial intelligence and physics to drive digitalization in battery technology.  With over 50 peer-reviewed journal articles, numerous patents, and more than €7M in research funding since 2022 from EU, BMBF, BMWK, BMDV, and industry, his work has garnered international recognition. Prof. Li has also received prestigious honors, including the Clarivate Highly Cited Researcher 2024, the BMBF BattFutur Starting Grant (€2M+), the German Thesis Award from the Körber Foundation, the Reichart Prize, the vgbe Innovation Prize, the Battery Young Research Award, the Umbrella Award, and the RWTH Innovation Award, etc.</p>
+                            <!--div class="location">
+                              <span>Location:</span> Hall 1 , Building A, Golden Street, Southafrica
+                            </div-->
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="tab-pane fade" id="tuesday" role="tabpanel" aria-labelledby="tuesday-tab">
+                    <div id="accordion2">
+                      <div class="card">
+                        <div id="headingTwo1">
+                          <div class="schedule-slot-time">
+                            <span> 2.10 - 3.00 PM</span>
+                          </div>
+                          <div class="collapsed card-header" data-toggle="collapse" data-target="#collapseTwo1" aria-expanded="false" aria-controls="collapseTwo1">
+                            <div class="images-box">
+                              <img class="img-fluid" src="assets/img/inbox/KandlerOct2023_colorCropped - Kandler Smith.jpeg" alt="">
+                            </div>
+                            <h4>Physics + AI for Faster Characterization of Batteries</h4>
+                            <h5 class="name">Kandler Smith, National Renewable Energy Laboratory</h5>
+                          </div>
+                        </div>
+                        <div id="collapseTwo1" class="collapse show" aria-labelledby="headingTwo1" data-parent="#accordion2">
+                          <div class="card-body">
+                            <p>Characterization of a new battery design can take well over a year. Bottlenecks include accurate lifetime prediction and determination of (dis)charge limits that optimize total cost of ownership over an application's complete lifecycle. Artificial intelligence (AI) has shown paths for early life prediction, however first efforts have generally required large amounts of training data and required that a handful of cells be cycled to end of life. We present examples using synthetic data end/or embedding physics models into AI algorithms to provide more accurate physics-based diagnostics and transfer AI knowledge to new chemistries and designs. </p>
+                            <p><strong>Biography:</strong> Kandler is team lead for Battery Electrochemical Modeling and Data Sciences at the Dept. of Energy's National Renewable Energy Laboratory in Golden, Colorado. His research focuses include multi-physics modeling of battery performance, lifetime, safety, and manufacturing processes, design/lifetime optimization, as well as battery characterization, diagnostics, and prognostics incorporating artificial intelligence. </p>
+                            <!--div class="location">
+                              <span>Location:</span> Hall 1 , Building A, Golden Street, Southafrica
+                            </div-->
+                          </div>
+                        </div>
+                      </div>
+                      <div class="card coffee-break-card">
+                        <div id="headingTwo">
+                          <div class="schedule-slot-time">
+                            <span>3.00 - 3.30 PM</span>
+                          </div>
+                          <div class="collapsed card-header" data-toggle="collapse" data-target="#collapseTwo">
+                            <div class="images-box">
+                              <i class="lni-coffee-cup"></i>
+                            </div>
+                            <h4 class="break-title">Coffee Break</h4>
+                            <h5 class="break-subtitle">Coffee &amp; Refreshments</h5>
+                          </div>
+                        </div>
+                      </div>
+                      <div class="card">
+                        <div id="headingFour1">
+                          <div class="schedule-slot-time">
+                            <span> 3.30 - 4.20 PM</span>
+                          </div>
+                          <div class="collapsed card-header" data-toggle="collapse" data-target="#collapseFour1" aria-expanded="false" aria-controls="collapseFour1">
+                            <div class="images-box">
+                              <img class="img-fluid" src="assets/img/speaker/Amalie Trewartha.jpg" alt="">
+                            </div>
+                            <h4>Talk Title Coming Soon</h4>
+                            <h5 class="name">Amalie Trewartha, TOYOTA Reasearch Institute </h5>
+                          </div>
+                        </div>
+                        <div id="collapseFour1" class="collapse" aria-labelledby="headingFour1" data-parent="#accordion2">
+                          <div class="card-body">
+                            <!-- <p>Professor Gregory Offer will present the research his group have done over the past ten years in understanding lithium-ion battery degradation, how to model it, and how close those models are getting to usefully predict lifetime. The journey began with pioneering work demonstrating how different thermal management approaches strongly affected the degradation rates of lithium-ion pouch cells. At around the same time the group began working on understanding and modelling the physical mechanisms of degradation.<br>
+                              The group have demonstrated how understanding non-uniform temperature and heat generation is essential in cell design. This gives rise to non-uniform degradation which is critical to understanding and explaining multiple experimentally observed phenomenon. If this strong positive coupling between the thermal and electrochemical behavior is not properly considered, then any model of a battery risks being very wrong except under the most benign conditions. Over the same period, the group have published multiple ground-breaking papers on understanding and modelling multiple coupled degradation mechanisms. The group's work also includes advancing our understanding of lithium plating, positive electrode (cathode) decomposition, unequal degradation in silicon carbon composite electrodes, particle cracking, electrolyte consumption and cell dry-out, and how multiple degradation mechanisms are coupled with each other and trigger accelerated degradation (the knee point/cliff-edge/etc).</p>-->
+                            <p><strong>Biography:</strong> Senior Research Scientist at Toyota Research Institute. </p> 
+                            <!--div class="location">
+                              <span>Location:</span> Hall 1 , Building A, Golden Street, Southafrica
+                            </div-->
+                          </div>
+                        </div>
+                      </div>
+                      <div class="card">
+                        <div id="headingFive1">
+                          <div class="schedule-slot-time">
+                            <span> 4.20 - 5.10 PM</span>
+                          </div>
+                          <div class="collapsed card-header" data-toggle="collapse" data-target="#collapseFive1" aria-expanded="false" aria-controls="collapseFive1">
+                            <div class="images-box">
+                              <img class="img-fluid" src="assets/img/speaker/Lin-2.jpg" alt="">
+                            </div>
+                            <h4>Talk Title Coming Soon</h4>
+                            <h5 class="name">Xinfan Lin, University of California, Davis </h5>
+                          </div>
+                        </div>
+                        <div id="collapseFive1" class="collapse" aria-labelledby="headingFive1" data-parent="#accordion2">
+                          <div class="card-body">
+                            <!-- <p>The battery industry has been in the midst of unprecedented growth and change. As battery technology scales and grows, small problems have become major challenges for the industry and threaten the safe and economical transition to an electrified economy. As veterans in the battery industry we have seen the difficulties that come with large scale battery production and have been searching for a solution. Our best answer is CT (computed tomography) x-ray scanning. This technology has been widely used in the medical field, and offers the ability to visualize and characterize the internal structure of the battery at high resolution. Mechanical structure, defects, and stresses are visible and a large number of the problems we have encountered can be found and diagnosed with this technique. We will discuss the value of CT imaging in factory ramp-up and production, and how we can make this data available by taking scanning time from hours to minutes and eventually seconds.</p>-->
+                            <p><strong>Biography:</strong> Xinfan Lin is currently an Associate Professor with the Department of Mechanical and Aerospace Engineering at the University of California, Davis, since 2017. He received his B.S. and M.S. degrees in Automotive Engineering from Tsinghua University, Beijing, China in 2007 and 2009, and Ph.D. in Mechanical Engineering from University of Michigan in 2014. Prior to his appointment at UC Davis, he was a research engineer at the Ford Motor Company from 2014 to 2016. His research interests include dynamic systems modeling, estimation, and control, data analytics, and machine learning with applications in energy, automotive, and aerospace systems. He is a recipient of the NSF CAREER Award (2021), LG Global Innovation Award (2019), and LG Battery Innovation Award (2017). His research has been funded by NSF, Office of Naval Research (ONR), NASA, California Climate Action Initiative, and industry. He has also been serving in different positions in the ASME Energy Systems Technical Committee (ESTC) since 2018, including Secretary, Publicity Chair, and Award Chair.</p> 
+                            <!--div class="location">
+                              <span>Location:</span> Hall 1 , Building A, Golden Street, Southafrica
+                            </div-->
+                          </div>
+                        </div>
+                      </div>
+                      <div class="card">
+                        <div id="headingSix1">
+                          <div class="schedule-slot-time">
+                            <span> 5.10 - 6.00 PM</span>
+                          </div>
+                          <div class="collapsed card-header" data-toggle="collapse" data-target="#collapseSix1" aria-expanded="false" aria-controls="collapseSix1">
+                            <div class="images-box">
+                              <img class="img-fluid" src="assets/img/speaker/Anna_Stefanopoulou.png.jpg" alt="">
+                            </div>
+                            <h4>Talk Title Coming Soon</h4>
+                            <h5 class="name">Anna Stefanopoulou, University of Michigan </h5>
+                          </div>
+                        </div>
+                        <div id="collapseSix1" class="collapse" aria-labelledby="headingSix1" data-parent="#accordion2">
+                          <div class="card-body">
+                            <!-- <p>Recent research advancements on battery management systems have achieved significant success in addressing issues ranging from state monitoring to optimal charging. Despite these strides, lithium-ion batteries present higher levels of complexity in dynamics in some emerging applications, such as electric aircraft, introducing thorny problems that state-of-the-art methods struggle to address. As a specific example, electric aircraft necessitate the discharge of lithium-ion batteries at high C-rates, which complicates the development of accurate dynamic models, hampers predictions of remaining energy, and makes model parameter identification difficult. Our latest research indicates that machine learning could provide valuable solutions to these issues, leveraging its strengths in data analysis and understanding. In this presentation, we will share key findings and results from our studies and explore the future prospects of machine learning-driven battery management systems.</p> -->
+                            <p><strong>Biography:</strong> Dr. Anna G. Stefanopoulou, the William Clay Ford Professor of Technology at the University of Michigan, has served as the Director of the Automotive Research Center, a multi-university U.S. Army Center of Excellence, and the Michigan Energy Institute.
+She has mentored and taught a generation of engineers in control of advanced powertrains through classroom, online, and asynchronous courses. She has been an advisor of new curricula, training needs, and research in modeling, estimation, and control for engines, fuel cells, and batteries, with findings documented in a book, 21 US patents, and 400 publications.
+She has been recognized by many prestigious awards and is a Fellow of the ASME, IEEE, and SAE. She has served on two US National Academy committees (2015 and 2020) formed upon request by the US Congress to report on vehicle fuel economy standards and the transition to electrification. </p>
+                            <!--div class="location">
+                              <span>Location:</span> Hall 1 , Building A, Golden Street, Southafrica
+                            </div-->
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
             </div>
           </div>
         </div>
